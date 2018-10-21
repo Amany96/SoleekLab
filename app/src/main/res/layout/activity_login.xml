@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+    <ImageView android:src="@drawable/news"
+        android:layout_width="1250dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <!--  Email Label -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/Email_Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email" />
+            </LinearLayout>
+
+            <!-- Password Label -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/Password_Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:hint="Password" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/Login"
+            android:textStyle="bold"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:background="#66C9E3"
+            android:text="Login"
+            android:textColor="#02359B"
+            android:layout_gravity="center"/>
+
+        <Button
+
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/Register"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:background="#66C9E3"
+            android:textColor="#02359B"
+            android:text="Register"
+
+            android:layout_gravity="center"/>
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
